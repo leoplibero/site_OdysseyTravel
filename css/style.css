@@ -1,0 +1,40 @@
+header{
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    display: flexbox;
+
+}
+.banner img{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+    opacity: 80%;
+    
+}
+nav{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(206, 142, 5, 0.322);
+}
+
+nav ul{
+    list-style: none;
+    font-size: 20px;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    position: relative;
+    
+}
+
+nav ul li{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgba(0, 0, 0, 0.479);
+    border-radius: 10px 10px 10px 10px;
+    padding: 10px;
+}

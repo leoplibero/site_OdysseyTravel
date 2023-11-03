@@ -1,0 +1,334 @@
+:root{ /*cores padrão do site*/
+    --color-white: #fff;
+    --color-black: #000;
+    --color-orange1: #fbb371;
+    --color-blue2: #1a5a74;
+}
+p{
+    color: var(--color-white);
+    text-shadow: 3px 3px 10px #04090a;;
+}
+h4{
+    color: var(--color-orange1);
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 3px 3px 10px #04090a;
+}
+* {/* Estilos globais */
+    margin:0;
+    padding: 0;
+}
+
+body{/* Estilos do corpo da página */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+header{/* Estilos do cabeçalho */
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    background-color: var(--color-white);
+    z-index: 1000;
+}
+
+#busca{ /*icone de busca*/
+    width: 20px;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    padding:14px;
+    background-color: var(--color-orange1);
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px gray;
+}
+
+#acli{ /*Icone de "area do cliente*/
+    width: 20%;
+    font: normal 12px arial;
+    text-align: center;
+    color: var(--color-blue2);
+    text-shadow: none;
+    position: absolute;
+    padding: 10px;
+    top: 25%;
+    right: 2%;
+    background-color: var(--color-orange1);
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px gray;
+    cursor: pointer;
+}
+
+#acli:hover{
+    background:#a37549;
+    color: var(--color-orange1);
+    transition: 0.7s;
+}
+
+header #logo{/*imagem da logomark*/
+    width: 100px;
+    position: fixed;
+    right: 42%;
+}
+
+header #letreiro{/*letreiro da logomark*/
+    visibility: hidden;
+    display: none;
+}
+
+#navbar nav{/*barra de navegação*/
+   position:fixed;
+   text-align: center;
+   margin-top: 84px;
+   background-color: var(--color-blue2);
+   padding-top: 5px ;
+   padding-bottom: 5px;
+   width: 100%;
+   z-index: 1000;
+}
+
+#navbar nav li{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-white);
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+nav li:hover{
+    color: #fbb371;
+    transition: all 0.3s ease-in-out 0.1s;
+    background-color: #11415441;
+    padding: 3px 8px 3px 8px;
+    border-radius: 10px;
+}
+
+nav ul a{
+    text-decoration: none;
+}
+
+.video-container{ /* Video referencia do banner*/
+    margin-top: 16%;
+    width: 100%;
+    box-shadow: 3px 3px 10px #1a5a74;
+    display: auto;
+}
+
+h1{
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 30px;
+    text-align: center;
+    color: var(--color-blue2);
+    text-shadow: 3px 3px 15px #1a5b7477;
+}
+
+#colunas{
+  width: 100%;
+  position: relative;
+}
+
+.ui-card{
+    display: flex;
+    position: relative;
+    height: 30vh;
+    margin-left: 6%;
+    width: 40%;
+    background: radial-gradient(#111 50%, #000 100%);
+    margin-bottom: 10%;
+    overflow: hidden;
+    float: left; 
+    box-shadow: 3px 3px 10px #1a5a74;
+    border-radius: 5%;
+
+}
+
+.ui-card img{
+    transform: scale(1.0);
+    transition: all 0.3s ease-out ;
+    width: 110%;
+    height: 110%;    
+}
+
+.ui-card:hover img {
+    transform: scale(1.0) translateY(-20px);
+    opacity: 0.3;
+}
+
+.descricao{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: var(--color-orange1);
+    font-size: 15px;
+}
+
+.descricao h3{
+    font-weight: 700;
+    font-size: 30px;
+    margin:  0 0 5px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.2s;
+}
+
+.descricao p{
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.2s;
+}
+
+.descricao a{
+    color: var(--color-white);
+    background: var(--color-blue2);
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px ;
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.1s ease-out 0.2s;
+}
+
+.descricao a:hover{
+    background: #114154;
+    transform: translateY(30px);
+}
+
+.ui-card:hover .descricao h3{/*Animação nome*/
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.ui-card:hover .descricao p{/*Animação paragrafo*/
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.ui-card:hover .descricao a{/*Animação do botão de "Saiba Mais..."*/
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#roteiros{
+    text-align: center;
+    width: 100%;
+    margin-top: 20vh;
+}
+
+#roteiros img{
+    width: 50%;
+    margin: 5%;
+    border-radius: 50px;
+    box-shadow: 3px 3px 10px #1a5a74;
+    cursor: pointer;
+}
+
+#roteiros img:hover{
+    width: 60%;
+    transition: 1s;
+}
+.travel {
+    width: 98%;
+    margin-top: 5vh;
+    background-image: linear-gradient(#1a5a74, #fbb371);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Duas colunas de largura igual */
+    box-shadow: 3px 3px 10px #1a5a74;
+    border-radius: 20px;
+    margin-left: 1%;
+}
+
+.column1{
+    margin-top: 10%;
+    position: relative;
+    display: flex-inline;
+    margin-left: 2vw;
+}
+
+.column1 h2 {/* Estilos para as colunas */
+    margin-top: 20px;
+    text-align: left;
+    font-size: 5vw;
+    text-shadow: 3px 3px 10px #1a5a74;;
+}
+
+.column1 p{
+    margin-top: 1vw;
+    color: var(--color-white);
+    font-size: 20px;
+    text-shadow: 3px 3px 10px #1a5a74;;
+}
+
+form{
+    margin-top: 15%;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+form #email {
+    width: 70%;
+    height: 50px;
+    border-radius:  50px;
+    background-color: var(--color-white);
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border: var(--color-black);
+    box-shadow: 3px 3px 10px #1a5a74;
+}
+
+form #enviar{
+    margin-top: 5%;
+    width: 50%;
+    height: 50px;
+    border-radius:  50px;
+    background-color: var(--color-orange1);
+    border: none;
+    box-shadow: 3px 3px 10px #1a5a74;
+    cursor: pointer;
+}
+form label{
+    font-size: 15px;
+    text-align: center;
+}
+footer{
+    margin-top: 20vh;
+    padding-top: 5vh;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    background-color: var(--color-blue2);
+    box-shadow: 3px 3px 10px #1a5a74;
+    height: 70vh;
+    width: 100%;
+}
+
+footer iframe{
+    margin-top: 2vh;
+    width: 400px;
+    height: 220px;
+    box-shadow: 3px 3px 10px #04090a;
+}
+#icons img{
+    margin-top: 5vh;
+    width: 50px;
+    margin-left: 50px;
+    visibility: visible;
+}
+
+footer .rodape2, .rodape3{
+    visibility: hidden;
+    display: none;
+}
+
