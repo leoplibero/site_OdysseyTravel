@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap');
 :root{ /*cores padrão do site*/
     --color-white: #fff;
     --color-black: #000;
@@ -17,12 +18,10 @@ h4{
 * {/* Estilos globais */
     margin:0;
     padding: 0;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 16px;
 }
 
-body{/* Estilos do corpo da página */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-}
 
 header{/* Estilos do cabeçalho */
     flex-direction: row;
@@ -33,78 +32,60 @@ header{/* Estilos do cabeçalho */
     z-index: 1000;
 }
 
-.menulateral{
+.menulateral{ /* Botão simulando a Barra de Pesquisa*/
+    display: flex;
     margin-top: 20px;
     margin-left: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: #FBB371;
-    border-radius: 100%;
+    width: 15%;
+    padding: 10px;
+    background-color: var(--color-orange1);
+    border-radius: 10px 10px;
     position: fixed;
-    top: 0;
-    left: 0;
     box-shadow: 3px 0 10px gray;
     z-index: 1000;
 }
-.menulateral:hover{
-    width: 220px;
-    background-color: #FBB371;
-    box-shadow: 3px 0 0 #1A5A74;
-    border-radius: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 1s;
-    z-index: 1000;
-}
 
-.btn-expandir{
-    width:100%;
-    padding-top: 15px;
-    margin-bottom: 25px;
-}
-
-.btn-expandir > i{
+.btn-expandir > i{/* Icone da barra de pesquisa*/
     color: #1A5A74;
     font-size: 25px;
-    margin-left: 18px;
     cursor: pointer;
     z-index: 1000;
 }
 
-ul li.item-menu{
+.menulateral input{ /*barra de pesquisa*/
+    width: 75%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    position: 0;
+}
+
+ul li.item-menu{/* Lista Oculta do Desktop*/
     visibility: hidden;
     display: none;
 }
 
-.menulateral input{
-    display:flex;
-    margin: 0;
-    position: 0;
-    visibility: hidden;
+.acli{
+    background:var(--color-orange1);
+    width: 16%;
+    position: fixed;
+    top: 3%;
+    right: 2%;
+    padding: 10px 1% 1% 1%;
+    border-radius: 10px 10px;
+    box-shadow: 3px 0 10px gray;
+    cursor: pointer;
+    z-index: 1000;
 }
-
-
-#acli{ /*Icone de "area do cliente*/
-    width: 13%;
-    font: normal 12pt arial;
-    position: absolute;
-    text-align: center;
+.acli p{
+    margin-bottom: 20px;
     color: var(--color-blue2);
     text-shadow: none;
-    top: 20%;
-    right: 2%;
-    padding: 1%;
-    background-color: var(--color-orange1);
-    border-radius: 30px;
-    box-shadow: 2px 2px 2px gray;
-    cursor: pointer;
 }
 
-#acli:hover{
-    background:var(--color-blue2);
-    color: var(--color-orange1);
-    transition: 0.7s;
+/*.acli label{*/
+.acli input{
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 header #logo{/*imagem da logomark*/
@@ -124,7 +105,7 @@ header #letreiro{/*letreiro da logomark*/
    padding-top: 5px ;
    padding-bottom: 5px;
    width: 100%;
-   z-index: 1000;
+   z-index: 999;
 }
 
 #navbar nav li{
