@@ -105,10 +105,11 @@ body .menu-lateral{
 }
 
 .menulateral{
-    margin-top: 20px;
+    padding-top: 10px;
+    margin-top: 15px;
     margin-left: 20px;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: #FBB371;
     border-radius: 100%;
     position: fixed;
@@ -134,25 +135,37 @@ body .menu-lateral{
     z-index: 1000;
 }
 
-.menulateral input{
+
+
+.pesquisa-btn{
+    color: var(--color-blue2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-orange1);
+    transition: 2s;
+    
+}
+
+.pesquisa-btn > i{
+    font-size: 30px;
+    
+}
+
+.pesquisa-txt{
     border-radius: 20px;
-    margin-left: 20px;
-    padding-left: 10px;
+    margin-top: 20px;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+    transition: 0.4;
+    line-height: 20px;
+    width: 150px;
 }
 
-.btn-expandir{
-    width:100%;
-    padding-top: 10px;
-    margin-bottom: 20px;
-}
 
-.btn-expandir > i{
-    color: #1A5A74;
-    font-size: 25px;
-    margin-left: 14px;
-    cursor: pointer;
-    z-index: 1000;
-}
+
+
 .acli{
     background:var(--color-orange1);
     width: 25%;
