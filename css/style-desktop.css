@@ -76,7 +76,6 @@ header{/* Estilos do cabeçalho */
     width: 0;
     visibility: hidden;
     display: none;
-    transition: 2s;
 }
 
 .pesquisa-box:hover > .pesquisa-txt{
@@ -85,7 +84,6 @@ header{/* Estilos do cabeçalho */
     width: 200px;
     padding: 0 6px;
     display: flex;
-    transition: 2s;
 }
 
 ul li.item-menu{/* Lista Oculta do Desktop*/
@@ -97,14 +95,32 @@ ul li.item-menu{/* Lista Oculta do Desktop*/
     background:var(--color-orange1);
     width: 16%;
     position: fixed;
+    height: 3%;
     top: 3%;
     right: 2%;
     padding: 10px 1% 1% 1%;
-    border-radius: 10px 10px;
+    border-radius: 20px 20px;
     box-shadow: 3px 0 10px gray;
     cursor: pointer;
     z-index: 1000;
+    overflow: hidden;
 }
+
+.acli:hover{
+    background:var(--color-orange1);
+    width: 16%;
+    height: 27%;
+    position: fixed;
+    top: 3%;
+    right: 2%;
+    padding: 10px 1% 1% 1%;
+    border-radius: 20px 20px;
+    box-shadow: 3px 0 10px gray;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 1s;
+}
+
 .acli p{
     margin-bottom: 20px;
     color: var(--color-blue2);
@@ -369,24 +385,24 @@ form #enviar{
 
 footer{
     margin-top: 20vh;
-    padding-top: 5vh;
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: var(--color-blue2);
     box-shadow: 3px 3px 10px #1a5a74;
-    height: 60vh;
+    height: 70vh;
     width: 100%;
 }
 
-.rodape1{
-    margin-left: 5vh;
+
+.rodape1, .rodape2, .rodape3{
+    margin-left: 3vh;
+    margin-top: 50px;
 }
 
 
 footer iframe{
     margin-top: 1vh;
-    
     width: 500px;
     height: 220px;
     box-shadow: 3px 3px 10px #04090a;
