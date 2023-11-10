@@ -34,7 +34,7 @@ header{/* Estilos do cabeçalho */
 
 .menulateral{ /* Botão simulando a Barra de Pesquisa*/
     display: flex;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 20px;
     width: 15%;
     padding: 10px;
@@ -53,8 +53,10 @@ header{/* Estilos do cabeçalho */
 }
 
 .menulateral input{ /*barra de pesquisa*/
-    width: 75%;
-    margin-left: 10px;
+    width: 10vw;
+    border-radius: 20px;
+    padding-left: 5px;
+    margin-left: 15px;
     margin-bottom: 5px;
     position: 0;
 }
@@ -84,8 +86,26 @@ ul li.item-menu{/* Lista Oculta do Desktop*/
 
 /*.acli label{*/
 .acli input{
+    border-radius: 20px;
+    width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+}
+.acli button{
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--color-blue2);
+    padding: 10px 30px;
+    border-radius: 20px 20px;
+    cursor: pointer;
+}
+.acli a{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.acli button h7{
+    width: 100%;
+    color: var(--color-orange1);
 }
 
 header #logo{/*imagem da logomark*/
@@ -146,14 +166,14 @@ header #letreiro{/*letreiro da logomark*/
 }
 
 #colunas{
-  width: 100%;
+  width:100%;
 }
 
 #colunas .ui-card{
     display: flex;
     position: relative;
     height: 70vh;
-    margin-left: 30px;
+    margin-left: 20px;
     width: 22%;
     background: radial-gradient(#111 50%, #000 100%);
     margin-bottom: 20vh;

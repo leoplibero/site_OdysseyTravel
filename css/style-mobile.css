@@ -153,6 +153,52 @@ body .menu-lateral{
     cursor: pointer;
     z-index: 1000;
 }
+.acli{
+    background:var(--color-orange1);
+    width: 25%;
+    position: fixed;
+    top: 3%;
+    right: 2%;
+    padding: 10px 1% 1% 1%;
+    border-radius: 10px 10px;
+    box-shadow: 3px 0 10px gray;
+    cursor: pointer;
+    z-index: 1000;
+}
+.acli p{
+    margin-bottom: 20px;
+    font-size: 3vw;
+    color: var(--color-blue2);
+    text-shadow: none;
+}
+
+/*.acli label{*/
+.acli input{
+    border-radius: 20px;
+    width: 100%;
+    text-align: center;
+}
+.acli button{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    background-color: var(--color-blue2);
+    padding: 10px 30px;
+    border-radius: 20px 20px;
+    cursor: pointer;
+}
+
+.acli a{
+    margin: 0;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.acli button h7{
+    font-size: 10px;
+    width: 100%;
+    color: var(--color-orange1);
+}
 
 ul{
     height: 100%;
