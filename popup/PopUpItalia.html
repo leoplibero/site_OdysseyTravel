@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap');
+        
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #FFC692;
+            border: 1px solid black;
+        }
+        .popup{
+            font-family: 'Inria Sans', sans-serif;
+            background-color: #FFC692;
+            color: #1A5A74;
+            width: 300px;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            text-align: center;
+        }
+        
+        .embarque{
+            background-color: white;
+            border: 1px solid black;
+            margin: 0px 10px 0px 10px ;
+            border-radius: 109px;
+        }
+
+        .roteiro{ 
+            margin: 0px 10px 0px 10px ;
+        }
+        .roteiro span{
+            background-color: white;
+            border: 1px solid black;
+            display: flex;
+            padding: 10px 0px 10px 10px;
+            border-radius: 109px;
+            margin: 0;
+            cursor:pointer
+        }
+
+        .escondida{
+            visibility: hidden;
+            display: none;
+            height: 0px;
+            cursor:pointer;
+        }
+
+        .exibida
+		{
+			visibility: visible;
+			height:auto;
+            background-color: #1A5A74;
+            color: #FFC692;
+            border-radius: 20px;
+            padding: 10px 10px 10px 10px;
+            margin: 0;
+            text-align: left;
+		}
+
+        .reserva{
+            
+            width: 200px;
+            padding: 20px;
+            border-radius: 109px;
+            background-color: #1A5A74;
+            color: #FFC692;
+            font-family: 'Inria Sans', sans-serif;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="popup">
+        <h1>GRECIA</h1>
+        <h3>Escolher à data de embarque: </h3>
+        <input type="date">
+
+        <h3>Embarque:</h3>
+        <div class="embarque">
+            <i class="bi bi-airplane"> São Paulo / Guarulhos</i><br>
+            </i>
+        </div>
+        <h3>Roteiro:</h3>
+
+        <div class="roteiro">
+            <span onclick="Mostra ('resp1')" onmouseleave="Esconde('resp1')" class="pergunta">1- SAÍDA </span>
+            <article id="resp1" class="escondida">
+                    23:00 - Aeroporto em Guarulhos
+                    <br>
+                    Rod. Hélio Smidt, s/n </article>
+
+            <span onclick="Mostra ('resp2')" onmouseleave="Esconde('resp2')" class="pergunta">2- O QUE INCLUI</span>
+            <article id="resp2" class="escondida">
+                Transporte executivo ida e volta com água a bordo.
+                <br>
+                Seguro viagem.
+                <br>
+                Entrada Arion Athens Hotel com acesso às:
+                - Piscinas Naturais.
+                
+                - Espaço de lazer
+                
+                - Café da Manhã
+                
+                MUITA DIVERSÃO E NOVAS AMIZADES!!! </article>
+            
+                <span onclick="Mostra ('resp3')" onmouseenter="Esconde('resp3')" class="pergunta">3- INFORMAÇÕES IMPORTANTES</span>
+                <article id="resp3" class="escondida">Pagamento via cartão de crédito:
+                    - Acréscimo de 5%', em até 12 X no cartão de crédito.
+                    <br>
+                    Pagamento via boleto:
+                    - Acréscimo de 5%' no valor total, mais juros das parcelas. Sendo primeiro pagamento para reserva e ultimo pagamento em até 5 dias antes da viagem.</article>
+        </div>
+
+        <h2>Valor: R$ 5,000</h2>
+        <button class="reserva"><i class="bi bi-cart"> RESERVE AGORA</i></button>
+    </div>
+
+    <script lang="javascript">
+        function Mostra(x)
+		{
+			document.getElementById(x).className = document.getElementById(x).className.replace("escondida","exibida");
+		}
+		
+		function Esconde(x)
+		{
+			document.getElementById(x).className = document.getElementById(x).className.replace("exibida","escondida");
+		}
+    </script>
+</body>
+
+</html>

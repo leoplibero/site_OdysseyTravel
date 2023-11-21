@@ -53,7 +53,6 @@ header{
 
 #acli{ /*Icone de "area do cliente*/
     width: 20%;
-    font: normal 12px arial;
     text-align: center;
     color: var(--color-blue2);
     text-shadow: none;
@@ -149,7 +148,7 @@ body .menu-lateral{
     width: 30%;
     position: fixed;
     top: 3%;
-    height: 6%;
+    height: 40px;
     right: 2%;
     padding: 10px 1% 1% 1%;
     border-radius: 10px 10px;
@@ -256,7 +255,6 @@ ul li.item-menu a .icon > i{
  }
  #navbar li{
     font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--color-white);
     display: inline;
     margin-right: 20px;

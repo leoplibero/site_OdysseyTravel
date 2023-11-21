@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap');
+
+:root{ /*cores padrão do site*/
+    --color-white: #fff;
+    --color-black: #000;
+    --color-orange1: #fbb371;
+    --color-blue2: #1a5a74;
+}
+
+*{
+    font-family: 'Inria Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{/* Estilos do corpo da página */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+header{/* Estilos do cabeçalho */
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    background-color: var(--color-white);
+    z-index: 1000;
+}
+
+#intro{/*barra de navegação*/
+    margin: 0;
+    padding: 0;
+    position:fixed;
+    text-align: center;
+    margin-top: 100px;
+    background-color: var(--color-blue2);
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    width: 100%;
+    padding-top: 10px;
+    z-index: 900;
+ }
+ #intro h3{
+    color: #fbb371;
+    font-size: 40px;
+}
+
+#busca{ /*icone de busca*/
+    width: 20px;
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    padding:14px;
+    background-color: var(--color-orange1);
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px gray;
+}
+
+
+header #logo{/*imagem da logomark*/
+    width: 100px;
+}
+
+header #letreiro{/*letreiro da logomark*/
+    width: 400px;
+    margin-top: 20px;
+}
+
+
+body .menu-lateral{
+    position: fixed;
+    height: 100vh;
+    padding-top: 10px ;
+    padding-left: 20px;
+}
+
+.menulateral{
+    padding-top: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #FBB371;
+    border-radius: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    box-shadow: 3px 0 10px gray;
+    z-index: 1000;
+}
+
+.menulateral:hover{
+    margin: 0;
+    position: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #FBB371;
+    box-shadow: 3px 0 0 #1A5A74;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 1s;
+    z-index: 1000;
+}
+
+.pesquisa-btn{
+    color: var(--color-blue2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-orange1);
+    transition: 2s;
+    
+}
+
+.pesquisa-btn > i{
+    font-size: 30px;
+    
+}
+
+.pesquisa-txt{
+    border-radius: 20px;
+    margin-top: 20px;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+    transition: 0.4;
+    line-height: 20px;
+    width: 150px;
+}
+
+ul{/*tamanho*/
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu:hover{/*cor para destacar item da barra*/
+    background-color: #b38051;
+}
+
+ul li.item-menu{/*posição da barra de conteúdo*/
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 10%;
+}
+
+ul li.item-menu a{/*estilo do texto*/
+    color: #1A5A74;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+}
+
+ul li.item-menu a .txt-link{/*posicionamento do texto*/
+    margin-left: 40px;
+    line-height: 30px;
+}
+
+ul li.item-menu a .icon > i{/*tamanho do icones*/
+    font-size: 30px;
+}
