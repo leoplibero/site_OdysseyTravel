@@ -25,9 +25,45 @@ h1{
     text-shadow: 1px 1px 2px  #04090a;
 }
 
-</style>
+/* definir as propriedades da página contato */
+#txt-contato {
+    width: 100%; height: 100%; padding-top: 200px;}
+#txt-contato form {
+    width:38%; position: relative; float: left; background-color: #fff; padding: 2%;
+top: 5%; min-height: 400px;}
+#txt-contato form label {
+    font-weight: bold;}
+#txt-contato form input {
+    max-width: 100%; width: 99%; height: 30px; margin-top: 10px;
+margin-bottom: 15px; border: solid var(--color-blue2) 1px; padding-left: 1%;}
+#txt-contato form textarea {
+    max-width: 100%; width: 99%; border: solid var(--color-blue2) 1px; padding-left: 1%; 
+min-height: 100px;}
+#txt-contato form button {
+    width: 30%; height: auto; cursor: pointer; background-color: var(--color-blue2);
+color: var(--color-orange1); font-size: 1.5em; padding: 15px 0 15px 0; margin-left: 35%; margin-top: 1%;}
+/*definir as propriedades dos icones*/
+#txt-contato #conta-data{ width: 26%;position: relative; float: left;padding: 2%; 
+    background-color: var(--color-blue2); color: var(--color-orange1);top: 5%; margin-left: 1.5%;height:400px;text-align: center;}
+   #txt-contato #conta-data h3{ color: #fff;text-align: center;}
+   #txt-contato #conta-data h5{ margin-top: 6%;margin-bottom: 4%; vertical-align: middle;}
+   #txt-contato #conta-data h5 img{width: 50px;}
+/* definir as propriedades do logo cliente*/
+.img-titulo {
+    width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+    position:relative;
+    float:left;
+    margin-right:5%;
+}
+.img-titulo img{
+    width: 90%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
 
-    <script src="apps/app.js"></script>
+</style>
 
 </head>
 <body>
@@ -87,10 +123,33 @@ h1{
     </div>
     </header>
 
-     <!-- Quem somos-->
-     <section class="quemsomos">
-<p><h1></h1>
+    
+     <section id="txt-contato">
+        <div class="img-titulo"><img src="assets/imagens/TrabalheConosco.png" alt="imagem de contato"></div>
+        <form name="meu_form" id="meu_form">
+            <p class="nome">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nomeid" placeholder="Ex:Fulano da Silva" required="required" name="nome"/></p>
 
+            <p class="fone">
+                <label for="fone">Fone:</label><br>
+                <input type="phone" id="foneid" placeholder="(xx)xxxxx-xxxx" name="fone"/></p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" required="required"/></p>
+
+            <p>
+                <textarea placeholder="Mensagem" required></textarea>
+            </p>
+                <button type="submit" form="meu_form">Enviar</button>
+        </form>
+            <div id="conta-data">
+                <h4>
+                Folhetos e Cardernos
+                </h4>
+                
+               </div>
     </section>
 
 </body>
