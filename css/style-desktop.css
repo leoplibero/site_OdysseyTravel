@@ -321,7 +321,7 @@ header #letreiro{/*letreiro da logomark*/
     transition: 1s;
 }
 
-.travel {
+#travel {
     width: 96%;
     margin-top: 20vh;
     height: 300px;

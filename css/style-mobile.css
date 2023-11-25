@@ -398,7 +398,7 @@ h1{
     width: 60%;
     transition: 1s;
 }
-.travel {
+#travel {
     width: 98%;
     margin-top: 5vh;
     background-image: linear-gradient(#1a5a74, #fbb371);
@@ -477,7 +477,7 @@ footer{
 
 footer iframe{
     margin-top: 2vh;
-    width: 400px;
+    width: 380px;
     height: 220px;
     box-shadow: 3px 3px 10px #04090a;
 }

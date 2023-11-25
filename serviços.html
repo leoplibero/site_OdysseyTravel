@@ -8,6 +8,23 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&display=swap');
 @import url(css/header.css);
+
+.quemsomos {
+    top: 200px;
+    position: relative;
+    width: 98%;
+    box-shadow: 3px 3px 10px linear-gradient(#1a5a74, #fbb371);
+    border-radius: 20px;
+    margin-left: 1%;
+}
+
+h1{
+    color: var(--color-orange1);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 1px 1px 2px  #04090a;
+}
+
 </style>
 
     <script src="apps/app.js"></script>
@@ -15,15 +32,16 @@
 </head>
 <body>
     <header>
-        <!-- Barra Introdução-->
-                <div id="intro">
-                    <H3>Serviços</H3>
-                </div>
+        
         <!-- Logo -->
                 <a href="index.html"><img id="logo" src="assets/imagens/Logo Claro.png"> </a>
         <!--Letreiro-->
                 <a href="index.html"><img id="letreiro" src="assets/imagens/ODYSSEY TRAVEL.png" ></a>
-        
+
+        <!-- Barra Introdução-->
+        <div id="intro">
+            <a href="serviços.html"> <H3>Serviços</H3></a>
+        </div>
         <!--Menu lateral-->
         <nav class="menulateral">
         <!--Caixa de Pesquisa-->            
@@ -34,7 +52,7 @@
                     <input class="pesquisa-txt" type="text" placeholder="PESQUISAR"></i>
                 </div>
         <!--Navegador do Menu Lateral-->
-            <ul>
+            ><ul>
                 <li class="item-menu">
                     <a href="index.html">
                         <span class="icon"><i class="bi bi-house"></i></span>
@@ -68,8 +86,15 @@
         </nav>
     </div>
     </header>
+
+     <!-- Quem somos-->
+     <section class="quemsomos">
+<p><h1></h1>
+
+    </section>
+
 </body>
 </html>
 
-
             
+

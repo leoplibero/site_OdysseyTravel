@@ -12,6 +12,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    text-transform: none;
 }
 
 body{/* Estilos do corpo da página */
@@ -32,9 +34,8 @@ header{/* Estilos do cabeçalho */
 #intro{/*barra de navegação*/
     margin: 0;
     padding: 0;
-    position:fixed;
+    position:absolute;
     text-align: center;
-    margin-top: 100px;
     background-color: var(--color-blue2);
     padding-top: 5px ;
     padding-bottom: 5px;
@@ -68,13 +69,6 @@ header #letreiro{/*letreiro da logomark*/
     margin-top: 20px;
 }
 
-
-body .menu-lateral{
-    position: fixed;
-    height: 100vh;
-    padding-top: 10px ;
-    padding-left: 20px;
-}
 
 .menulateral{
     padding-top: 10px;
