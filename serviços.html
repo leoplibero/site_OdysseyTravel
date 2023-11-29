@@ -13,6 +13,7 @@
     top: 200px;
     position: relative;
     width: 98%;
+    height: 100%;
     box-shadow: 3px 3px 10px linear-gradient(#1a5a74, #fbb371);
     border-radius: 20px;
     margin-left: 1%;
@@ -40,11 +41,21 @@ margin-bottom: 15px; border: solid var(--color-blue2) 1px; padding-left: 1%;}
     max-width: 100%; width: 99%; border: solid var(--color-blue2) 1px; padding-left: 1%; 
 min-height: 100px;}
 #txt-contato form button {
-    width: 30%; height: auto; cursor: pointer; background-color: var(--color-blue2);
-color: var(--color-orange1); font-size: 1.5em; padding: 15px 0 15px 0; margin-left: 35%; margin-top: 1%;}
+    width: 50%; height: auto; cursor: pointer; background-color: var(--color-blue2);
+color: var(--color-orange1); font-size: 1.5em; padding: 15px 0 15px 0; margin-left: 25%; margin-top: 1%;}
 /*definir as propriedades dos icones*/
-#txt-contato #conta-data{ width: 26%;position: relative; float: left;padding: 2%; 
-    background-color: var(--color-blue2); color: var(--color-orange1);top: 5%; margin-left: 1.5%;height:400px;text-align: center;}
+#txt-contato #conta-data{ 
+    width: 26%;
+    position: 
+    relative; 
+    float: left;
+    padding: 2%; 
+    background-color: 
+    var(--color-blue2); 
+    color: var(--color-orange1);top: 5%; 
+    margin-left: 1.5%;
+    height:18%;
+    text-align: center;}
    #txt-contato #conta-data h3{ color: #fff;text-align: center;}
    #txt-contato #conta-data h5{ margin-top: 6%;margin-bottom: 4%; vertical-align: middle;}
    #txt-contato #conta-data h5 img{width: 50px;}
@@ -61,6 +72,15 @@ color: var(--color-orange1); font-size: 1.5em; padding: 15px 0 15px 0; margin-le
     width: 90%;
     margin-left: 10%;
     margin-top: 50px;
+}
+
+.btn-enviar{
+    width: 100px;
+}
+
+#conta-data img{
+    width: 100%;
+    background-color: #1a5a74;
 }
 
 </style>
@@ -90,31 +110,31 @@ color: var(--color-orange1); font-size: 1.5em; padding: 15px 0 15px 0; margin-le
         <!--Navegador do Menu Lateral-->
             ><ul>
                 <li class="item-menu">
-                    <a href="index.html">
+                    <a href="">
                         <span class="icon"><i class="bi bi-house"></i></span>
                         <span class="txt-link">Home</span>
                 </li>
             
                 <li class="item-menu">
-                    <a href="institucional.html">
+                    <a href="">
                         <span class="icon"><i class="bi bi-columns-gap"></i></span>
                         <span class="txt-link">Institucional</span>
                 </li>
 
                 <li class="item-menu">
-                    <a href="#">
+                    <a href="">
                         <span class="icon"><i class="bi bi-gear-wide-connected"></i></span>
                         <span class="txt-link">Serviços</span>
                 </li>
 
                 <li class="item-menu">
-                    <a href="https://chat.whatsapp.com/E3KH7W4f9PN2Nq51QIxVuc">
+                    <a href="">
                         <span class="icon"><i class="bi bi-whatsapp"></i></span>
                      <span class="txt-link">Whatsapp</span>
                 </li>
 
                 <li class="item-menu">
-                    <a href="https://www.instagram.com/odysseytrvl/">
+                    <a href=">
                         <span class="icon"><i class="bi bi-instagram"></i></span>
                         <span class="txt-link">Instagram</span>
                 </li>
@@ -129,7 +149,7 @@ color: var(--color-orange1); font-size: 1.5em; padding: 15px 0 15px 0; margin-le
         <form name="meu_form" id="meu_form">
             <p class="nome">
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nomeid" placeholder="Ex:Fulano da Silva" required="required" name="nome"/></p>
+                <input type="text" id="nomeid" placeholder="Nome Completo" required="required" name="nome"/></p>
 
             <p class="fone">
                 <label for="fone">Fone:</label><br>
@@ -137,7 +157,7 @@ color: var(--color-orange1); font-size: 1.5em; padding: 15px 0 15px 0; margin-le
 
             <p>
                 <label for="email">Email:</label><br>
-                <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" required="required"/></p>
+                <input type="email" id="emailid" placeholder="email@mail.com" name="email" required="required"/></p>
 
             <p>
                 <textarea placeholder="Mensagem" required></textarea>
@@ -146,8 +166,10 @@ color: var(--color-orange1); font-size: 1.5em; padding: 15px 0 15px 0; margin-le
         </form>
             <div id="conta-data">
                 <h4>
-                Folhetos e Cardernos
+                Folhetos e Cardernos<br>
                 </h4>
+                <br>
+                <img src="assets/imagens/Flyer.png" alt="flyer">
                 
                </div>
     </section>
